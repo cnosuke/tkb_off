@@ -1,0 +1,12 @@
+
+<div class="participants">
+  <ul>
+    <% @participants.each do |u| %>
+    <li>
+      <img src="http://api.twitter.com/1/users/profile_image?screen_name=<%= u.screen_name %>&size=normal" width="40">
+      <span class="screen_name"><%= u.screen_name %>
+      <span class="user_name"><%= u.name %>
+    </li>
+    <% end %>
+  </ul>
+</div>
