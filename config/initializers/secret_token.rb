@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-TkbOff::Application.config.secret_token = '58dfed9e79a678366d619a450c06bcd03a4648fbc982ba6caa83eac60eae6ea121a57143d51f6889d72a7e29273438a1a4d5e93ef6b01a077274cb7ce333829e'
+TkbOff::Application.config.secret_token = '9fb54a0bd3f96a76e82e24bc2d1df520181570264725a7d5c27ee6e911977f50839197cc3685f4b5677d8c21e0f999029b69fef0b1ffb88b383608902b60a438'

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -33,11 +33,11 @@ end
 
 gem 'pry-rails'
 gem 'hirb-unicode'
-gem 'therubyracer', '0.10.2'
+gem 'therubyracer'
 gem 'capistrano'
 gem 'capistrano_colors'
 gem 'rvm-capistrano'
 gem 'acts_as_paranoid'
-# gem 'devise'
+#gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
