@@ -1,13 +1,15 @@
-class UserController < ApplicationController
+class UsersController < ApplicationController
   def index
     @participants = User.all
   end
 
   def regist
+    @user = current_user
   end
 
   def create
-    current_user.update_attributes({
+    @user = current_user
+    @user.update_attributes({
                                      :real_name => params["real_name"],
                                      :unit => params["unit"],
                                      :student_num => params["student_num"],

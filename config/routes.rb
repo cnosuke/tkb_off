@@ -1,4 +1,13 @@
 TkbOff::Application.routes.draw do
+
+  match '/auth/twitter/callback', to: 'sessions#create'
+  match '/logout' => 'sessions#destroy', :as => :logout
+
+  get '/regist' => 'users#regist'
+  put '/create' => 'users#create'
+
+  root :to => 'users#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -56,11 +65,5 @@ TkbOff::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 
-  root :to => 'user#index'
-  match '/auth/:provider/callback', :to => 'sessions#callback'
-  match '/logout' => 'sessions#destroy', :as => :logout
-
-  get '/regist' => 'users#regist'
-  post '/create' => 'users#create'
 
 end

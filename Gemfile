@@ -38,6 +38,6 @@ gem 'capistrano'
 gem 'capistrano_colors'
 gem 'rvm-capistrano'
 gem 'acts_as_paranoid'
-#gem 'devise'
 gem 'omniauth'
-gem 'omniauth-twitter'
+gem 'omniauth-twitter', :github => 'arunagw/omniauth-twitter'
+
