@@ -59,6 +59,8 @@ TkbOff::Application.routes.draw do
   root :to => 'user#index'
   match '/auth/:provider/callback', :to => 'sessions#callback'
   match '/logout' => 'sessions#destroy', :as => :logout
-  
+
+  get '/regist' => 'users#regist'
+  post '/create' => 'users#create'
 
 end
