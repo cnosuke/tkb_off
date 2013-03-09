@@ -22,9 +22,9 @@
         <div class="header">
             <p>筑波大学大規模OFF #tkb_off 公式WEB</p>
             <% if current_user %>
-            <%= link_to 'Sign Out', logout_path %>
+            <%= link_to 'Account Setting', regist_path, {:class => 'btn_edit'} %>
             <% else %>
-            <%= link_to 'Sign Up', '/auth/twitter' %>
+            <%= link_to 'Sign Up', '/auth/twitter', {:class => 'btn_sign_up'} %>
             <% end %>
         </div>
     </div>

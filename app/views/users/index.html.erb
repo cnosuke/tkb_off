@@ -40,155 +40,65 @@
 
 <div class="members">
     <h2>#member</h2>
+
+    <% @participants.each do |user| %>
+
     <div class="member">
-        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=cnosuke&size=bigger" alt="cnosuke" />
+        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=<%= user.screen_name %>&size=bigger" alt="<%= user.screen_name %>" />
         <div class="caption">
-            <a href="http://twitter.com/cnosuke">@cnosuke</a>
-            <p>初参加になります。よろしくお願いします。とっても楽しみです。</p>
-        </div>
-    </div>
-    <div class="member">
-        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=cnosuke&size=bigger" alt="cnosuke" />
-        <div class="caption">
-            <a href="http://twitter.com/cnosuke">@cnosuke<span class="name">(しんのすけ)</span></a>
-            <p>初参加になります。よろしくお願いします。とっても楽しみです。</p>
-        </div>
-    </div>
-    <div class="member">
-        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=cnosuke&size=bigger" alt="cnosuke" />
-        <div class="caption">
-            <a href="http://twitter.com/cnosuke">@cnosuke</a>
-            <p>初参加になります。よろしくお願いします。とっても楽しみです。</p>
-        </div>
-    </div>
-    <div class="member">
-        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=cnosuke&size=bigger" alt="cnosuke" />
-        <div class="caption">
-            <a href="http://twitter.com/cnosuke">@cnosuke</a>
-            <p>初参加になります。よろしくお願いします。とっても楽しみです。</p>
-        </div>
-    </div>
-    <div class="member">
-        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=cnosuke&size=bigger" alt="cnosuke" />
-        <div class="caption">
-            <a href="http://twitter.com/cnosuke">@cnosuke</a>
-            <p>初参加になります。よろしくお願いします。とっても楽しみです。</p>
-        </div>
-    </div>
-    <div class="member">
-        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=cnosuke&size=bigger" alt="cnosuke" />
-        <div class="caption">
-            <a href="http://twitter.com/cnosuke">@cnosuke</a>
-            <p>初参加になります。よろしくお願いします。とっても楽しみです。</p>
-        </div>
-    </div>
-    <div class="member">
-        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=cnosuke&size=bigger" alt="cnosuke" />
-        <div class="caption">
-            <a href="http://twitter.com/cnosuke">@cnosuke</a>
-            <p>初参加になります。よろしくお願いします。とっても楽しみです。</p>
-        </div>
-    </div>
-    <div class="member">
-        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=cnosuke&size=bigger" alt="cnosuke" />
-        <div class="caption">
-            <a href="http://twitter.com/cnosuke">@cnosuke</a>
-            <p>初参加になります。よろしくお願いします。とっても楽しみです。</p>
-        </div>
-    </div>
-    <div class="member">
-        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=cnosuke&size=bigger" alt="cnosuke" />
-        <div class="caption">
-            <a href="http://twitter.com/cnosuke">@cnosuke</a>
-            <p>初参加になります。よろしくお願いします。とっても楽しみです。</p>
-        </div>
-    </div>
-    <div class="member">
-        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=cnosuke&size=bigger" alt="cnosuke" />
-        <div class="caption">
-            <a href="http://twitter.com/cnosuke">@cnosuke</a>
-            <p>初参加になります。よろしくお願いします。とっても楽しみです。</p>
-        </div>
-    </div>
-    <div class="member">
-        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=cnosuke&size=bigger" alt="cnosuke" />
-        <div class="caption">
-            <a href="http://twitter.com/cnosuke">@cnosuke</a>
-            <p>初参加になります。よろしくお願いします。とっても楽しみです。</p>
-        </div>
-    </div>
-    <div class="member">
-        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=cnosuke&size=bigger" alt="cnosuke" />
-        <div class="caption">
-            <a href="http://twitter.com/cnosuke">@cnosuke</a>
-            <p>初参加になります。よろしくお願いします。とっても楽しみです。</p>
-        </div>
-    </div>
-    <div class="member">
-        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=cnosuke&size=bigger" alt="cnosuke" />
-        <div class="caption">
-            <a href="http://twitter.com/cnosuke">@cnosuke</a>
-            <p>初参加になります。よろしくお願いします。とっても楽しみです。</p>
-        </div>
-    </div>
-    <div class="member">
-        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=cnosuke&size=bigger" alt="cnosuke" />
-        <div class="caption">
-            <a href="http://twitter.com/cnosuke">@cnosuke</a>
-            <p>初参加になります。よろしくお願いします。とっても楽しみです。</p>
-        </div>
-    </div>
-    <div class="member">
-        <img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=cnosuke&size=bigger" alt="cnosuke" />
-        <div class="caption">
-            <a href="http://twitter.com/cnosuke">@cnosuke</a>
-            <p>初参加になります。よろしくお願いします。とっても楽しみです。</p>
+            <a href="http://twitter.com/<%= user.screen_name %>">@<%= user.screen_name %></a>
+            <p><%= user.comment %></p>
         </div>
     </div>
 
-    
+    <% end %>
 
 </div>
 
-<% if true %>
+<% if @regist_flag %>
 
 <div id="regist_form">
-THIS IS REGIST FORM AREA
+<h2>Sign up</h2>
 
 <% if @user %>
-<%= @user.screen_name %><br />
-<%= @user.name %><br />
+<label>Twitter</label>
+<p><%= @user.screen_name %> ( <%= @user.name %> )
+<img class="icon" src="https://api.twitter.com/1/users/profile_image?screen_name=<%= @user.screen_name %>&size=bigger" alt="<%= @user.screen_name %>"  style="margin-top: -72px"/>
+</p>
+
 
 <%= form_for(@user, :url => {:action => 'create'} ) do |f| %>
 
 <%= f.label '名前' %>
 <%= f.text_field :real_name %>
 
-<%= f.label '所属(筑波大学関係者以外の方は紹介者の本名を記述してください)' %>
+<%= f.label '所属 (筑波大学関係者以外の方は紹介者の本名を入力)' %>
 <%= f.text_field :unit %>
 
-<%= f.label '学籍番号(関係者以外は0を入力)' %>
+<%= f.label '学籍番号 (関係者以外は0を入力)' %>
 <%= f.text_field :student_num %>
 
 <%= f.label 'ひとことコメント(サイト上で公開・名札に印刷予定)' %>
-<%= f.text_field :comment %>
+<%= f.text_area :comment, :maxlength => "80" %>
 
 <%= f.label '運営へのコメント(非公開・任意)' %>
-<%= f.text_field :message %>
+<%= f.text_area :message %>
 
-<%= f.submit "Submit" %>
+<%= f.submit "Sign Up", {:id=>'btn_submit'} %>
 <% end %>
 
 <% end %>
 </div>
-<a href="#regist_form" id="form" >link to form.</a>
+<a href="#regist_form" id="form" style="display:none;">link to form.</a>
 
 <script>
 $(function(){$("a#form").fancybox({
     'titlePosition'     : 'inside',
     'transitionIn'      : 'none',
     'transitionOut'     : 'none',
-})})
-$("a#form").click()
+    'overlayColor'      : '#000'
+});
+$("a#form").click();
+})
 </script>
 <% end %>

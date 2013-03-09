@@ -1,0 +1,238 @@
+$basecolor : #00a0e9
+
+$textcolor : #6cc7f1
+
+.header_wrap
+    height: 55px
+    min-width: 100%
+    background-color: $basecolor
+
+    .header
+        width: 860px
+        margin: 0 auto 0 auto
+
+        p
+            color: #fff
+            font-weight: bolder
+            display: inline-block
+            margin: 15px 0 0 20px
+
+        a
+            float: right
+            margin: 12px 20px 0 0
+            display: block
+            width: 196px
+            height: 34px
+            text-indent: -999em
+            background-position: 0 0
+
+            &:hover
+                background-position: 0 -34px
+
+        .btn_sign_up
+            background-image: image-url("btn_sign_up.png")
+        .btn_edit
+            background-image: image-url("btn_account_setting.png")
+
+.container
+    
+    width: 860px
+    margin: 0 auto 0 auto
+
+    h1
+        background-image: image-url("title_tkboff.png")
+        width: 700px
+        height: 337px
+        margin: 0 auto 0 auto
+        display: block
+        text-indent: -999em
+
+    .sec
+        float: left
+        width: 280px
+        color: $textcolor
+        margin: 0 10px 20px 0
+        font-size: 13px
+
+        p
+            line-height: 1.4em
+
+        h2
+            width: 235px
+            height: 35px
+            display: block
+            text-indent: -999em
+            margin: 0 0 10px 0
+
+        h3
+            background-image: image-url("h3.png")
+            background-repeat: no-repeat
+            background-position: 0px 4px
+            margin: 10px 0 5px 0
+            padding-left: 20px
+            font-size: 14px
+            font-weight: bolder
+            color: $basecolor
+
+    .sec_last
+        margin: 0 0 20px 0
+
+    .about
+        h2
+            background-image: image-url("title_about.png")
+
+    .tw
+        h2
+            background-image: image-url("title_twitter.png")
+
+    .map
+        h2
+            background-image: image-url("title_map.png")
+        a
+            color: $textcolor
+
+    .members
+        clear: both
+        margin: 0 0 200px
+
+        h2
+            background-image: image-url("title_members.png")
+            width: 116px
+            height: 25px
+            display: block
+            text-indent: -999em
+            margin: 0 0 10px 0
+
+        .member
+            float: left
+            position: relative
+
+            .icon
+                padding: 5px
+                width: 73px
+                height: 73px
+
+            .caption
+                display: none
+
+            &:hover
+                .caption
+                    position: absolute
+                    display: block
+                    z-index: 10
+                    width: 200px
+                    height: 110px
+                    background: rgba(255,255,255,1)
+                    border: 2px $basecolor solid
+                    border-radius: 4px
+                    -webkit-border-radius: 4px
+                    -moz-border-radius: 4px
+                    color: $textcolor
+                    top: -113px
+                    left: -63px
+
+                &:after
+                    content: ""
+                    position: absolute
+                    height: 0
+                    width: 0
+                    left: 40px
+                    top: -3px
+                    border-width: 14px 14px 14px 14px
+                    border-style: solid
+                    border-top-color: rgba(255,255,255,1)
+                    border-bottom-color: rgba(255,255,255,0)
+                    border-right-color: rgba(255,255,255,0)
+                    border-left-color: rgba(255,255,255,0)
+                &:before
+                    content: ""
+                    position: absolute
+                    height: 0
+                    width: 0
+                    left: 40px
+                    top: 0px
+                    border-width: 14px 14px 14px 14px
+                    border-style: solid
+                    border-top-color: $basecolor
+                    border-bottom-color: rgba(255,255,255,0)
+                    border-right-color: rgba(255,255,255,0)
+                    border-left-color: rgba(255,255,255,0)
+
+                p
+                    padding-left: 8px
+                    font-size: 13px
+                    line-height: 1em
+
+                a
+                    color: $basecolor
+                    padding-left: 8px
+                    text-decoration: none
+                    font-weight: bolder
+
+                    .name
+                        font-weight: normal
+                        font-size: 13px
+
+
+.footer
+    clear: both
+    height: 60px
+    background-color: $basecolor
+    min-width: 100px
+    margin: 100px 0 0 0
+    padding-top: 30px
+
+    .copy
+        color: #fff
+        text-align: center
+        font-size: 13px
+
+        a
+            color: #fff
+            text-decoration: none
+
+#regist_form
+    background-color: rgba(0,0,0,0.2)
+    width: 410px
+    margin: 0 auto 0 auto
+    padding: 50px
+    color: #fff
+    h2
+        background-image: image-url("sign_up.png")
+        width: 167px
+        height: 46px
+        display: block
+        text-indent: -999em
+        margin: 0 0 10px 0
+
+    label
+        display: block
+        font-weight: bolder
+        margin-top: 20px
+
+    input
+        display: block
+        width: 400px
+        font-size: 20px
+
+    textarea
+        display: block
+        width: 400px
+        height: 80px
+        font-size: 20px
+
+    #btn_submit
+        margin-top: 20px
+        background-image: image-url("btn_submit.png")
+        display: block
+        width: 156px
+        height: 52px
+        text-indent: -999em
+        border: 2px solid $textcolor
+        border-radius: 4px
+        -webkit-border-radius: 4px
+        -moz-border-radius: 4px
+
+        &:hover
+            border-color: $basecolor
+
