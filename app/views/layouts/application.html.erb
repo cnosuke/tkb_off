@@ -1,20 +1,52 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>TkbOff</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>筑波大学大規模OFF | #tkb_off 公式WEB</title>
+        <meta name="description" content="今年もやります! 筑波大学Twitter大規模OFF「#tkb_off」 2013年3月23日 (土) 14:00から">
+        <meta name="viewport" content="width=device-width">
 
-  <% if current_user %>
-  <%= current_user.name %> <%= link_to 'ログアウト', logout_path %>
-  <% else %>
-  <%= link_to 'ログイン', '/auth/twitter' %>
-  <% end %>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <%= stylesheet_link_tag    "application", :media => "all" %>
+        <%= javascript_include_tag "application" %>
+        <%= csrf_meta_tags %>
 
-<%= yield %>
+    </head>
+    <body>
+    <div class="header_wrap">
+        <div class="header">
+            <p>筑波大学大規模OFF #tkb_off 公式WEB</p>
+            <% if current_user %>
+            <%= link_to 'Account Setting', regist_path, {:class => 'btn_edit'} %>
+            <% else %>
+            <%= link_to 'Sign Up', '/auth/twitter', {:class => 'btn_sign_up'} %>
+            <% end %>
+        </div>
+    </div>
 
-</body>
+    <div class="container">
+        <%= yield %>
+    </div>
+
+    <div class="footer">
+        <p class="copy">Copyright &copy; 2013 @AknEp, @kmdr, @cnosuke and Twitterつくばクラスタ有志 tkboff2013(at-mark)gmail.com</p>
+        <p class="copy">Designed by <a href="http://twitter.com/kmdr">kmdr</a> | Code is written by <a href="http://twitter.com/cnosuke/">cnosuke</a> with Ruby on Rails.</p>
+    </div>
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
 </html>
